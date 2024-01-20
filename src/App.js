@@ -1,6 +1,5 @@
 import "./App.css";
 import { useState } from "react";
-
 import { RWebShare } from "react-web-share";
 import { FaShareAlt } from "react-icons/fa";
 const App = () => {
@@ -10,7 +9,6 @@ const App = () => {
     author: "Ahmed Saber",
   };
   const [quote, setQuote] = useState(quoteData);
-  // const location = useLocation();
 
   const generateQuote = () => {
     fetch(url)
